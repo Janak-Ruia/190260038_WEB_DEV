@@ -34,12 +34,21 @@ a:active {
 }
 
 .intro{
-    background-color: aqua;
+    background-color: yellow;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: intro;
+    border-top: solid;
+    animation: intro_anim;
+    animation-duration: 3s;
+}
+
+@keyframes intro_anim{
+    from{background-color: gold;}
+    to{background-color: yellow;}
 }
 .ed{
-    background-color: rgb(255, 121, 94);
+    background-color: maroon;
     border-top: solid;
     border-left: dashed;
     border-right: dashed;
@@ -47,8 +56,8 @@ a:active {
     animation-duration: 3s;
 }
 @keyframes ed_anim{
-    from{background-color: mediumpurple;}
-    to{background-color: rgb(255,121,94);}
+    from{background-color: gold;}
+    to{background-color: maroon;}
 }
 
 
@@ -57,13 +66,15 @@ a:active {
     margin-right: 30px;
     margin-left: 20px;
     margin-top: 50px;
+    color: white;
 }
 .hobby, .ambitions{
     border-left: dashed;
     border-right: dashed;
     animation: hobby_anim;
     animation-duration: 3s;
-    background-color: chartreuse;
+    background-color: maroon;
+    color: white;
 
 }
 .hobby{
@@ -71,8 +82,8 @@ a:active {
 
 }   
 @keyframes hobby_anim{
-    from{background-color: mediumpurple;}
-    to{background-color: chartreuse;}
+    from{background-color: gold;}
+    to{background-color: maroon;}
 }
 .hobby_content, .ambitions_content{
     margin-left: 20px;
@@ -104,18 +115,9 @@ main{
     grid-area: image_cell;
     display: flex;
     justify-content: center;
-    background-color: mediumpurple;
+    background-color: gold;
 }
-.intro{
-    grid-area: intro;
-    border-top: solid;
-    animation: intro_anim;
-    animation-duration: 3s;
-}
-@keyframes intro_anim{
-    from{background-color: mediumpurple;}
-    to{background-color: aqua;}
-}
+
 .ed{
     grid-area: ed;
 }
@@ -128,11 +130,11 @@ main{
     justify-content: center;
     animation: contact_anim;
     animation-duration: 3s;
-    background-color: navajowhite;
+    background-color: yellow;
 }
 @keyframes contact_anim{
-    from{background-color: mediumpurple;}
-    to{background-color: navajowhite;}
+    from{background-color: gold;}
+    to{background-color: yellow;}
 }
 .contact{
     font-size: larger;
