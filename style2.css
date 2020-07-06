@@ -48,23 +48,25 @@ body{
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
-#nav{
-    display: flex;
-    flex-direction: column;
-    grid-area: nav;
-    background-color: black;
-    overflow: hidden;
-    border-radius: 0px 0px 10px 0px;
-    
+@media (min-width: 700px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+        grid-area: nav;
+        background-color: black;
+        border-radius: 0px 0px 10px 0px;
+        overflow: auto;
+    }
+    #nav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
 }
-#nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+    
   
 #nav a:hover {
     background-color: #ddd;
