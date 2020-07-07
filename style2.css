@@ -6,17 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background-image: url("image.jpg");
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-template-areas: "nav photo"
-    ". ed"
-    ". hobby"
-    ". ambition"
-    ". contact";
-}
+
 .wiki_link a:link{
     color: blue;
 }
@@ -49,6 +39,17 @@ body{
     background-color: #555; /* Add a dark-grey background on hover */
   }
 @media (min-width: 700px){
+    body{
+        background-image: url("image.jpg");
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        grid-template-areas: "nav photo"
+        ". ed"
+        ". hobby"
+        ". ambition"
+        ". contact";
+    }
     #nav{
         display: flex;
         flex-direction: column;
@@ -66,6 +67,67 @@ body{
         font-size: 17px;
     }
 }
+@media (max-width: 870px){
+    body{
+        background-image: url("image.jpg");
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas: "nav photo "
+        "ed ."
+        "hobby ."
+        "ambition ."
+        "contact .";
+    }
+    #nav{
+        display: flex;
+        flex-direction: row;
+        grid-area: nav;
+        background-color: black;
+        border-radius: 0px 0px 10px 0px;
+        overflow: auto;
+    }
+    #nav a {
+        display: block;
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 12px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+}
+@media (max-width: 570px){
+    body{
+        background-image: url("image.jpg");
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        grid-template-areas: "nav photo "
+        "ed ."
+        "hobby ."
+        "ambition ."
+        "contact .";
+    }
+    #nav{
+        display: flex;
+        flex-direction: row;
+        grid-area: nav;
+        background-color: black;
+        border-radius: 0px 0px 10px 0px;
+        overflow: auto;
+    }
+    #nav a {
+        display: block;
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 3px 5px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+}
+
     
   
 #nav a:hover {
