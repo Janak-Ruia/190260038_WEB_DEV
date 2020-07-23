@@ -1,0 +1,93 @@
+html{
+    scroll-behavior: smooth;
+}
+img{
+  width: 70%;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.image img{
+    width: 75%;
+    border-radius: 8px;
+}
+.navbar-nav a:hover{
+      background-color: blue;
+      border-radius: 10px;
+}
+.navbar-nav a:active{
+    background-color: black;
+}
+.jumbotron{
+    background-image: url("https://images.pexels.com/photos/301378/pexels-photo-301378.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: 100%;
+    
+
+}
+.jumbotron>h1{
+    color: white;
+}
+.jumbotron>p{
+    color: wheat;
+}
+body{
+  background-image: url("wood.jpg");
+
+}
+.footer{
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+.nav-pills .nav-link.active {
+    background-color: black;
+    
+}
+a{
+    color: white;
+}
+.nav-pills a:hover{
+    background-color: black;
+    color: white;
+}
+input, textarea{
+    background-color: burlywood;
+    border-radius: 8px;
+}
+.btn{
+    margin-bottom: 20px;
+}
+div .sticky-top{
+    top: 75px;
+}
+@media only screen and (min-width: 575px) {
+   #sidebar_wrapper{
+      background-image: url("https://images.pexels.com/photos/172280/pexels-photo-172280.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+      width: 100px;
+   }
+  }
+#to_the_top{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50px;
+    z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+}
+#to_the_top:hover{
+    background-color: darkgrey;
+}
+/*To make sure that when we press a link in navbar, the title of the div is visible (some space left on top)*/
+#about, #hobbies, #interests, #projects{
+    padding-top: 75px;
+    margin-top: -75px;
+}
+a .footer{
+    font-size: 35px;
+}
