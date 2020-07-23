@@ -5,103 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <style>
-  html{
-      scroll-behavior: smooth;
-  }
-  img{
-    width: 70%;
-    border-radius: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .image img{
-      width: 75%;
-      border-radius: 8px;
-  }
-  .navbar-nav a:hover{
-        background-color: blue;
-        border-radius: 10px;
-  }
-  .navbar-nav a:active{
-      background-color: black;
-  }
-  .jumbotron{
-      background-image: url(wood_dark.jpg);
-      background-size: 100%;
 
-  }
-  .jumbotron>h1{
-      color: white;
-  }
-  .jumbotron>p{
-      color: wheat;
-  }
-  body{
-    background-image: url(wood.jpg);
-
-  }
-  .footer{
-      padding-top: 1cm;
-      padding-bottom: 1cm;
-  }
-  .nav-pills .nav-link.active {
-      background-color: black;
-      
-  }
-  a{
-      color: white;
-  }
-  .nav-pills a:hover{
-      background-color: black;
-      color: white;
-  }
-  input, textarea{
-      background-color: burlywood;
-      border-radius: 8px;
-  }
-  .btn{
-      margin-bottom: 20px;
-  }
-  div .sticky-top{
-      top: 75px;
-  }
-  @media only screen and (min-width: 575px) {
-     #sidebar_wrapper{
-        background-image: url("https://images.pexels.com/photos/172280/pexels-photo-172280.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-        width: 100px;
-     }
-    }
- #to_the_top{
-      display: none;
-      position: fixed;
-      bottom: 30px;
-      left: 50px;
-      z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 8px;
-  }
-  #to_the_top:hover{
-      background-color: darkgrey;
-  }
-  /*To make sure that when we press a link in navbar, the title of the div is visible (some space left on top)*/
-  #about, #hobbies, #interests, #projects{
-      padding-top: 75px;
-      margin-top: -75px;
-  }
-  a .footer{
-      font-size: 35px;
-  }
-  </style>
+  
 </head>
 <body>
     <button id="to_the_top" onclick="topFunction()" title="To the Top">TOP</button>
@@ -142,7 +51,7 @@
                 <h2>About Me</h2>
                 <h5>That's me:</h5>
                 <div class='image'><img src="janak.jpg"></div>
-                <p>Hi there! I am Janak. I am a guy who likes to think about things ranging from very abstract thoughts, to very particular ones. I am pursuing a B.Tech in Engineering Physics from IIT-Bombay. I am deeply interested in exploring physics and understanding mathematics. To know more about me, you can follow the links provided under "<a href="#some_links">Some links</a>".</p>
+                <p>Hi there! I am Janak. I am a guy who likes to think about things ranging from very abstract thoughts, to very particular ones. I am pursuing a B.Tech in Engineering Physics from IIT-Bombay. I am deeply interested in exploring physics and understanding mathematics. To know more about me, you can follow the links provided under "<a href="#some_links" style="color: brown;">Digital Footprint</a>".</p>
             <hr class="d-sm-none">
             
         </div>
@@ -161,7 +70,7 @@
             <div id='projects'><h2>Projects</h2></div>
             <h5>I have been learning somethings in the past months, heres what:</h5>
             <div><a href="https://cs50.harvard.edu/ai"><img src="https://prod-discovery.edx-cdn.org/media/course/image/3a31db71-de8f-45f1-ae65-11981ed9d680-31634d40b3bb.small.png"></a></div>
-            <p>I was interested in knowing what exactly AI is, hence I took up this course. I enjoyed it a lot. To see some of the projects I worked on, follow this <a href="https://www.youtube.com/playlist?list=PL62uwV1v-nhBANcAGDGPVD4LNztu4PKDD">link</a></p>
+            <p>I was interested in knowing what exactly AI is, hence I took up this course. I enjoyed it a lot. To see some of the projects I worked on, follow this <a href="https://www.youtube.com/playlist?list=PL62uwV1v-nhBANcAGDGPVD4LNztu4PKDD" style="color: brown;">link</a></p>
             <div><img src="blender.png"></div>
             <p>I had taken a course in 3d animation of astrophysical phenomena. This is just one of my renders.</p>
             <br>
@@ -177,7 +86,7 @@
         <div id="sidebar_wrapper" class="col-sm-2">
             <div id="sidebar_content" class='sticky-top'>
                 
-                <h3>Some Links</h3>
+                <h3 style="color: white">Digital Footprint</h3>
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
                     <a class="nav-link active" href="mailto:thetpacc2@gmail.com">Contact Me</a>
@@ -196,23 +105,24 @@
             </div>
         </div>
     </div>
-        <!-- modify this form HTML and place wherever you want your form -->
+
     <div class="container" id="form">
         <h2>Contact Form</h2>
+        <p>Because who doesn't like to criticize ;P</p>
         <form action="https://formspree.io/xwkrwdbo" method="POST">
             <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" placeholder="Add Name" name="reply_to">
+            <input type="text" class="form-control" placeholder="Add Name" name="reply_to" required>
             </div>
 
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" placeholder="Enter Email address">
+                <input type="email" class="form-control" placeholder="Enter Email address" required>
             </div>
 
             <div class="form-group">
                 <label>Reviews</label>
-                <input type="text" class="form-control" placeholder="Add your reviews here" name="message">
+                <textarea type="text" class="form-control" placeholder="Add your reviews here" name="message" required></textarea>
 
             </div>
             <button type="submit" class="btn btn-outline-dark">Submit!</button>
@@ -227,23 +137,6 @@
 
     </p>
     </div>
-    <script>
-        let button=document.getElementById("to_the_top");
-        window.onscroll=function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.documentElement.scrollTop > 400) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.documentElement.scrollTop = 0;
-        }
-        
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
